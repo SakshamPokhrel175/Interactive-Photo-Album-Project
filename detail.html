@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/details.css">
+    <title>Gallerie | A Photo search App</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+            <a href="./"><img src="./assets/logo.png" alt="Logo" class="logo"/></a>
+            <a href="./"><h1 class="title">GALLERIE</h1></a>
+            <form action="./search.html" method="get">
+                <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything"/>  <!-- The autocomplete attribute in HTML is used to specify whether a form or input field should have autocomplete enabled or disabled. When autocomplete is enabled, the browser can remember the input values that a user has previously entered and suggest them when the user starts typing in the field.-->
+                <input type="submit" value="SEARCH" class="search" />
+            </form>
+    </nav>
+    <!-- Main Content -->
+    <section>
+        <h1 class="heading">&lt;DETAIL FOR - <span id="image_id"> </span> /&gt;</h1>
+        <div class="detail">
+            <img id="detail_image" alt="Primary"/>
+            <div class="content">
+                <h1 class="description" id="description_text"></h1>
+                <br />
+                <h3>Uploaded by -@<span id="username"></span></h3>
+                <br />
+                <h4>Date - <span id="upload_date"></span></h4>
+                <br />
+                <h5><span id="like_count"></span> Likes (<span id="view_count"></span> Views)</h5>
+                <br />
+                <hr/>
+                <br />
+                <h1 class="description" id="alt_description"></h1>
+                <br />
+                <br />
+                <br />
+                <h5>Base Color</h5>
+                <br />
+                <div class="image_color" id="image_color">
+                    <span id="color_text"></span>
+                </div>
+                <br />
+                <br />
+                <a target="_blank" id="download_link" class="button">&lt;DOWNLOAD/&gt;</a>
+
+                <!-- Date -->
+                <!-- Like and View count -->
+                 <!-- Alternate Description -->
+                  <!-- Color of the image -->
+                   <!-- Download -->
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <a href="./"><h5>Gallerie</h5></a>
+        <h1>|</h1>
+        <h5>Designed and Developed by Saksham & Team!</h5>
+        <h1>|</h1>
+        <a href="./"><h5>Github</h5></a>
+
+    </footer>
+    <!-- Scripts -->
+    <script src="./assets/common.js"></script>
+    <script src="./assets/detail.js"></script>
+</body>
+</html>
